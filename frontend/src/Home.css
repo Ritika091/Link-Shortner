@@ -1,0 +1,27 @@
+.Home{
+    text-align: center;
+}
+.Search{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.Search input{
+    width: 35rem;
+    height: 2.3rem;
+    border-radius: 15px;
+}
+.icon{
+    margin-top: 1px;
+    border-radius: 15px;
+    border: 2px solid;
+    width: 4rem;
+    height: 37px;
+    margin-left: -4.2em;
+    cursor: pointer;
+}
+.Result{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
