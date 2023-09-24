@@ -25,3 +25,8 @@
     justify-content: center;
     margin-top: 4rem;
 }
+@media (max-width: 750px) {
+.Search input{
+    width: 18rem;
+}
+}
