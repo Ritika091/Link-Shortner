@@ -13,7 +13,7 @@ app.get('/shortner',(req,res)=>{
     const u=req.query.u;
     const id=shortId.generate();
     url[id]=u;
-    res.json({ shorturl: `http://localhost:${port}/${id}` });
+    res.json({ shorturl: `https://link-shortener-00xh.onrender.com/${id}` });
 })
 
 app.get('/:id',(req,res)=>{
