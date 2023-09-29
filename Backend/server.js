@@ -6,6 +6,9 @@ const app=express();
 
 app.use(cors());
 const url={};
+app.get('/',(req,res)=>{
+    res.send("Welcome to Link Shortener Website");
+})
 app.get('/shortner',(req,res)=>{
     const u=req.query.u;
     const id=shortId.generate();
