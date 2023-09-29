@@ -1,14 +1,16 @@
 const express=require('express');
 const shortId = require('shortid')
+const cors = require('cors');
 const port=5000;
 const app=express();
 
+app.use(cors());
 const url={};
 app.get('/shortner',(req,res)=>{
     const u=req.query.u;
     const id=shortId.generate();
     url[id]=u;
-    res.send(`http://localhost:${port}/${id}`);
+    res.json({ shorturl: `http://localhost:${port}/${id}` });
 })
 
 app.get('/:id',(req,res)=>{

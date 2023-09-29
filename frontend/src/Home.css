@@ -10,6 +10,8 @@
     width: 35rem;
     height: 2.3rem;
     border-radius: 15px;
+    padding-right: 6rem;
+    padding-left: 1rem;
 }
 .icon{
     margin-top: 1px;
@@ -21,12 +23,37 @@
     cursor: pointer;
 }
 .Result{
-    display: flex;
-    justify-content: center;
     margin-top: 4rem;
+}
+.Result button{
+    width: 5rem;
+    height: 3rem;
+    font-size: 24px;
+    border-radius: 1rem;
+    background: green;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer a{
+    color: black;
 }
 @media (max-width: 750px) {
 .Search input{
-    width: 18rem;
+    width: 12rem;
+}
+.Result{
+    font-size: 13px;
+}
+.Result button{
+    font-size: 15px;
+}
+.footer{
+    font-size: 13px;
 }
 }
