@@ -7,7 +7,7 @@ export default function Home() {
   const [link,setLink]=useState();
   const [shorturl,setShorturl]=useState();
  const short=(link)=>{
-  fetch(`http://localhost:5000/shortner?u=${link}`,{
+  fetch(`https://link-shortener-00xh.onrender.com/shortner?u=${link}`,{
     method:"GET"
   }).then((response) => {
     if (!response.ok) {
